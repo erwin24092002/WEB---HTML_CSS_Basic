@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Poppins:wght@500;600&display=swap');
+
+:root{
+    --primary-color: #f2726a;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.member-list{
+    height: auto;
+    background: linear-gradient(45deg, #00853e, #50c878);
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    background: #242628;
+    width: 30%;
+    min-width: 250px;
+    max-width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+    margin: 40px;
+}
+
+.card p{
+    color: var(--primary-color);
+}
+
+.card__img{
+    width: 120px;
+    height: 120px;
+    border: 4px solid var(--primary-color);
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    transition: 0.3s;
+    transform: translateY(25px);
+}
+
+.card__img:hover {
+    width: 100%;
+    height: 100%;
+    border-radius: unset;
+    border: unset;
+    transform: unset;
+}
+
+.card__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card h2{
+    margin-top: 40px;
+}
+
+.card__socials {
+    margin: 20px 0;
+}
+
+.card__socials a{
+    color: white;
+    text-decoration: none;
+    margin: 25px 20px;
+    font-size: 20px;
+}
+
+.card__socials a:hover {
+    color: var(--primary-color);
+}
+
+.card button {
+    width: 150px;
+    height: 40px;
+    border: 1px solid var(--primary-color);
+    background: transparent;
+    color: white;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.card button:hover {
+    background: var(--primary-color);
+}

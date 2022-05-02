@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Poppins:wght@600&display=swap');
+
+:root{
+    --primary-color: #4daf54;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to right, #4daf54, #3d8880);
+    font-family: 'Poppins', sans-serif;
+}
+
+.card {
+    margin: 120px auto;
+    width: 320px;
+    height: 400px;
+    background: #272d40;
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+    position: relative;
+}
+
+.card__heart,
+.card__cart{
+    font-size: 25px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.card__cart{
+    right: 20px;
+    top: 15px;
+}
+
+
+.card__heart{
+    left: 20px;
+    top: 15px;
+}
+
+.card__img{
+    width: 90%;
+    transition: 0.5s;
+    transition-delay: 0.01s;
+}
+
+.card__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card__title,
+.card__price{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.5s 0.01s;
+}
+
+.card__title{
+    color: var(--primary-color);
+}
+
+.card__size,
+.card__color,
+.card__action{
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+    opacity: 0;
+    transition: 0.5s 0.01s;
+    visibility: hidden;
+}
+
+.card__size{
+    margin-top: 150px;
+}
+
+.card__size span{
+    padding: 2px 5px;
+    background: #dadada;
+    color: black;
+    border-radius: 5px;
+    margin-left: 12px;
+}
+
+.card__color span{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-left: 12px;
+}
+
+.card__color--green{
+    background: green;
+}
+
+.card__color--red{
+    background: red;
+
+}.card__color--black{
+    background: black;
+}
+
+.card__action{
+    justify-content: space-evenly;
+}
+
+.card__action button{
+    background: #4daf54;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 13px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.card__action button:hover {
+    transform: scale(0.9);
+}
+
+.card:hover .card__img{
+    transform: translateY(-60px) rotate(-20deg);
+}
+
+.card:hover .card__title{
+    transform: translate(-38px, -72px);
+} 
+
+.card:hover .card__price{
+    transform: translate(-116px, -72px);
+}
+
+.card:hover .card__size {
+    visibility: visible;
+    margin-top: -30px;
+    opacity: 1;
+}
+
+.card:hover .card__color {
+    visibility: visible;
+    opacity: 1;
+}
+
+.card:hover .card__action {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
